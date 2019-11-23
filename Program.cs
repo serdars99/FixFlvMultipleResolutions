@@ -14,6 +14,7 @@ namespace FixFlvMultipleResolutions
             var search = new byte[] { 0x6F, 0x6E, 0x4D, 0x65, 0x74, 0x61, 0x44, 0x61, 0x74, 0x61 };//onMetaData header, if these are many they our cause problem
             foreach (var arg in args)
             {
+                Console.WriteLine(arg);
                 var bytes = File.ReadAllBytes(arg);
                 var indexes = new List<int>();
                 var index = 0;
